@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1098425995972",
+    "project_id": "chickendisease-c4ad0",
+    "storage_bucket": "chickendisease-c4ad0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098425995972:android:170c08766901e91daeaf91",
+        "android_client_info": {
+          "package_name": "com.example.chicky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098425995972-93em578lipg0pt42edtnu329avv6n4fq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4SqIy9j7vELXajGoRC7M-YeQBym_De0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1098425995972-93em578lipg0pt42edtnu329avv6n4fq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
