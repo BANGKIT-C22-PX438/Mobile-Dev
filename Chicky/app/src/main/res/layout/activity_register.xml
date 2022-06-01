@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="251dp"
-        android:layout_height="259dp"
+        android:layout_width="199dp"
+        android:layout_height="161dp"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ball"
-        tools:layout_editor_absoluteY="-32dp" />
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -61,6 +61,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="MissingConstraints" />
+
+
 
     <EditText
         android:id="@+id/fullpassword"
@@ -126,5 +128,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/tv_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpassword"
+        tools:text="TextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
