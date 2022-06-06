@@ -5,10 +5,14 @@
       <map>
         <entry key="..\:/Users/chris/OneDrive/Documents/GitHub/Mobile-Dev/Chicky/app/src/main/res/drawable/rounded_edittext.xml" value="0.136" />
         <entry key="..\:/Users/chris/OneDrive/Documents/GitHub/Mobile-Dev/Chicky/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/chris/OneDrive/Documents/GitHub/Mobile-Dev/Chicky/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/chris/OneDrive/Documents/GitHub/Mobile-Dev/Chicky/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/chris/OneDrive/Documents/GitHub/Mobile-Dev/Chicky/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/chris/OneDrive/Documents/GitHub/Mobile-Dev/Chicky/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/Users/chris/OneDrive/Documents/GitHub/Mobile-Dev/Chicky/app/src/main/res/layout/activity_splash_screen.xml" value="0.152" />
+        <entry key="..\:/Users/chris/OneDrive/Documents/GitHub/Mobile-Dev/Chicky/app/src/main/res/layout/fragment_home.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/chris/OneDrive/Documents/GitHub/Mobile-Dev/Chicky/app/src/main/res/layout/fragment_more.xml" value="0.2653985507246377" />
+        <entry key="..\:/Users/chris/OneDrive/Documents/GitHub/Mobile-Dev/Chicky/app/src/main/res/layout/fragment_profile.xml" value="0.2653985507246377" />
+        <entry key="..\:/Users/chris/OneDrive/Documents/GitHub/Mobile-Dev/Chicky/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>
@@ -17,5 +21,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22780797101449277" />
+      </ProjectState>
+    </option>
   </component>
 </project>
