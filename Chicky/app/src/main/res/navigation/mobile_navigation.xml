@@ -23,8 +23,8 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_profile" />
     <fragment
-        android:id="@+id/moreFragment"
+        android:id="@+id/navigation_more"
         android:name="com.example.chicky.ui.more.MoreFragment"
-        android:label="fragment_more"
+        android:label="More"
         tools:layout="@layout/fragment_more" />
 </navigation>
