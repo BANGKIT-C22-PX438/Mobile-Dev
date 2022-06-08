@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.chicky.databinding.FragmentProfileBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 
 class ProfileFragment : Fragment() {
@@ -18,6 +20,8 @@ class ProfileFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+    private lateinit var auth: FirebaseAuth
+    private lateinit var fstore:FirebaseFirestore
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         (requireActivity() as AppCompatActivity).supportActionBar?.hide()
@@ -29,10 +33,16 @@ class ProfileFragment : Fragment() {
     ): View {
         val notificationsViewModel =
             ViewModelProvider(this)[ProfileViewModel::class.java]
-
+        auth = FirebaseAuth.getInstance()
+        fstore = FirebaseFirestore.getInstance()
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
+        val document = auth.currentUser?.let { fstore.collection("users").document(it.uid) }
+        document?.get()?.addOnSuccessListener {
+            binding.userEmail.text = it.getString("email")
+            binding.userPhone.text = it.getString("phone")
+            binding.textView9.text= it.getString("fname")
+        }
 
         return root
     }
