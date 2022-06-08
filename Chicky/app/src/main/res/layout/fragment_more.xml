@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
+            android:id="@+id/gotohelp"
             android:orientation="horizontal">
 
             <ImageView
@@ -48,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
+            android:id="@+id/gotoappsetting"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
@@ -77,6 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
+            android:id="@+id/gotoeditprofile"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
