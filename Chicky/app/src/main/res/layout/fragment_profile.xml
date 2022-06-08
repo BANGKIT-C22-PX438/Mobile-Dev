@@ -94,6 +94,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/userEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingStart="13dp"
@@ -127,6 +128,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/userPhone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingStart="13dp"
@@ -160,6 +162,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/UserBirthday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingStart="13dp"
@@ -193,6 +196,7 @@
                     android:textSize="12sp" />
 
                 <TextView
+                    android:id="@+id/userSex"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingStart="13dp"
