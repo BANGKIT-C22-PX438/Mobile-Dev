@@ -14,6 +14,8 @@ class HelpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHelpBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.title = "Help"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.emailus.setOnClickListener {
             val intent = Intent(Intent.ACTION_SEND )
             intent.putExtra(Intent.EXTRA_EMAIL,"c22px438@gmail.com")
