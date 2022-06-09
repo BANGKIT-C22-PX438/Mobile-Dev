@@ -54,7 +54,9 @@ class RegisterActivity : AppCompatActivity() {
                     user["fname"] = fullname
                     user["email"] = email
                     user["phone"] = phonenumber
-                    user["password"] = confirmPassword
+                    user["radio"]= ""
+                    user["birthday"] = ""
+
                     documentReference.set(user).addOnSuccessListener {
                         Log.d("Message","DocumentSnapshot added with ID: ${documentReference.id}")
                     }

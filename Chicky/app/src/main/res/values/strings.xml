@@ -5,6 +5,22 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Explore</string>
+    <string name="title_notifications">Profile</string>
+    <string-array name="Title">
+        <item>Diagnosis and control of chicken coccidiosis</item>
+        <item>Epidemiology,Diagnosis and Prevention of Newcastle Disease in Poultry</item>
+        <item>The control of poultry salmonellosis using organic agents</item>
+        <item>Manajemen Pemeliharaan Broiler</item>
+        <item>Salmonella and Food</item>
+        <item>Cost Effectiveness of Poultry Production by Sustainable and Renewable Energy Source</item>
+    </string-array>
+    <string-array name="link">
+        <item>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6261147/</item>
+        <item>https://biomedgrid.com/fulltext/volume3/epidemiology-diagnosis-prevention-of-newcastle-disease-in-poultry.000632.php#:~:text=)%20%5B2%5D.-,Newcastle%20disease%20is%20a%20contagious%20bird%20disease%20affecting%20many%20domestic,sense%20RNA%20virus%20%5B3%5D.</item>
+        <item>https://www.sciencedirect.com/science/article/pii/S0032579122000219</item>
+        <item>http://erepo.unud.ac.id/id/eprint/34787/1/981d4316d70ec008155e1de0f548e352.pdf</item>
+        <item>https://www.cdc.gov/foodsafety/communication/salmonella-food.html</item>
+        <item>https://www.intechopen.com/chapters/76496</item>
+    </string-array>
 </resources>
