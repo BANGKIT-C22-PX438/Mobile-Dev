@@ -46,6 +46,7 @@ class HomeFragment : Fragment() {
         val document = auth.currentUser?.let { fstore.collection("users").document(it.uid) }
         document?.get()?.addOnSuccessListener {
             Log.d("APP","Success to get data")
+
             binding.textView12.text = it.getString("fname")
         }
         return root

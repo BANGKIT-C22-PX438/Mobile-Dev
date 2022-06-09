@@ -42,6 +42,8 @@ class ProfileFragment : Fragment() {
             binding.userEmail.text = it.getString("email")
             binding.userPhone.text = it.getString("phone")
             binding.textView9.text= it.getString("fname")
+            binding.userSex.text = it.getString("radio")
+            binding.UserBirthday.text = it.getString("birthday")
         }
 
         return root
