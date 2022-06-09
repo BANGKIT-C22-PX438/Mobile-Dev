@@ -9,6 +9,8 @@ class AppSettingActivity : AppCompatActivity() {
     private lateinit var binding:ActivityAppSettingBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.title = "App Setting"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding = ActivityAppSettingBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.ID.setOnClickListener {
