@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.chicky.HistoryActivity
 import com.example.chicky.databinding.FragmentHomeBinding
+import com.example.chicky.ui.tensorflow.ScanActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -42,6 +43,9 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
         binding.imageView9.setOnClickListener {
             startActivity(Intent(requireActivity(),HistoryActivity::class.java))
+        }
+        binding.imageView8.setOnClickListener {
+            startActivity(Intent(requireActivity(),ScanActivity::class.java))
         }
         val document = auth.currentUser?.let { fstore.collection("users").document(it.uid) }
         document?.get()?.addOnSuccessListener {
