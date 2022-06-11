@@ -26,7 +26,6 @@ class RegisterActivity : AppCompatActivity() {
         binding.button.setOnClickListener {
             val fullname = binding.fullname.text.toString().trim()
             val email = binding.email.text.toString().trim()
-            val phonenumber = binding.fullpassword.toString().trim()
             val confirmpassword = binding.confirmpassword.text.toString().trim()
             if(!Patterns.EMAIL_ADDRESS.matcher(email).matches())
             {
@@ -34,7 +33,7 @@ class RegisterActivity : AppCompatActivity() {
                 binding.email.requestFocus()
                 return@setOnClickListener
             }
-            register(fullname,email,phonenumber,confirmpassword)
+            register(fullname,email,confirmpassword)
         }
         binding.textView5.setOnClickListener{
             val intent = Intent(this,LoginActivity::class.java)
@@ -42,7 +41,7 @@ class RegisterActivity : AppCompatActivity() {
             finish()
         }
     }
-    private fun register(fullname:String,email:String,phonenumber:String,confirmPassword:String)
+    private fun register(fullname:String,email:String,confirmPassword:String)
     {
         auth.createUserWithEmailAndPassword(email,confirmPassword)
             .addOnCompleteListener(this){task ->
@@ -53,7 +52,7 @@ class RegisterActivity : AppCompatActivity() {
                     val user: MutableMap<String, Any> = HashMap()
                     user["fname"] = fullname
                     user["email"] = email
-                    user["phone"] = phonenumber
+                    user["phone"] = ""
                     user["radio"]= ""
                     user["birthday"] = ""
 
