@@ -50,6 +50,7 @@ class ScanActivity : AppCompatActivity() {
                 == PackageManager.PERMISSION_GRANTED)
             {
                 takePicturePreview.launch(null)
+
             }
             else
             {
@@ -74,7 +75,7 @@ class ScanActivity : AppCompatActivity() {
                     result.data?.data?.let {
                         val bitmap = BitmapFactory.decodeStream(contentResolver.openInputStream(it))
                         binding.imageView12.setImageBitmap(bitmap)
-                        outputGenerator(bitmap)
+
                     }
                 }
                 else
@@ -118,7 +119,6 @@ class ScanActivity : AppCompatActivity() {
         if(bitmap!=null)
         {
             binding.imageView12.setImageBitmap(bitmap)
-
         }
     }
 
