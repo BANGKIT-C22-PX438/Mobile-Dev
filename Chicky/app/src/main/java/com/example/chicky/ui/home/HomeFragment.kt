@@ -45,7 +45,7 @@ class HomeFragment : Fragment() {
             startActivity(Intent(requireActivity(),HistoryActivity::class.java))
         }
         binding.imageView8.setOnClickListener {
-            startActivity(Intent(requireActivity(),ScanActivity::class.java))
+            startActivity(Intent(requireActivity(), ScanActivity::class.java))
         }
         val document = auth.currentUser?.let { fstore.collection("users").document(it.uid) }
         document?.get()?.addOnSuccessListener {
